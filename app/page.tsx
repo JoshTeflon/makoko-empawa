@@ -1,7 +1,9 @@
-import Image from "next/image";
+import { Landing } from "@/components/views";
 
 export default function Home() {
   return (
-    <main className="min-h-screen"></main>
+    <main className="mt-32 lg:mt-[9.75rem] min-h-screen">
+      <Landing />
+    </main>
   );
 }

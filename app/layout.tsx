@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
-import { Header } from "@/components/shared";
+import { Footer, Header } from "@/components/shared";
 import "./globals.css";
 
 const clashGrotesk = localFont({
@@ -47,9 +47,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-main ${clashGrotesk.className}`}>
+      <body className={`bg-main text-black/70 ${clashGrotesk.className} transition-all ease-in-out`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
