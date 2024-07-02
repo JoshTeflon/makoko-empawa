@@ -49,6 +49,10 @@ body {
 
 @layer utilities {
   .width-balance {
-    @apply mx-auto w-full max-w-7xl px-5 lg:px-10 xl:px-20;
+    @apply px-5 lg:px-10 xl:px-20 mx-auto w-full max-w-7xl;
+  }
+
+  .section-border {
+    @apply mx-auto w-[85%] xl:w-3/4 max-w-7xl h-[1.84px] bg-black/20 blur-[1.5px];
   }
 }

@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import { SVGProps } from "react";
 
 export interface SocialLinks {
@@ -9,4 +10,10 @@ export interface SocialLinks {
 export interface FooterLinks {
   header: string
   items: string[]
+}
+
+export interface WorkflowItem {
+  src: StaticImageData
+  title: string
+  note?: string
 }

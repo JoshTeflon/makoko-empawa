@@ -3,8 +3,7 @@ import { Button } from "../interface";
 import { footerLinks, socialLinks } from "@/lib";
 import { FooterLinks, SocialLinks } from "@/types";
 
-const Footer = () => {
-
+const Footer: React.FC = () => {
 
   return (
     <footer className="py-16 lg:pb-10 bg-primary text-white border-t border-t-white/20">
@@ -39,10 +38,7 @@ const Footer = () => {
                     <ul className="space-y-4 lg:space-y-[1.125rem]">
                       {
                         link.items.map((item: string) => (
-                          <li
-                            key={item}
-                            className="text-sm"
-                          >
+                          <li key={item} className="text-sm">
                             <Link
                               href={'/'}
                               className="cursor-pointer hover:text-secondary"

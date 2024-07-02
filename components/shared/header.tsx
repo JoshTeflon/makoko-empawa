@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { Button } from "../interface";
 
-const Header = () => {
+const Header: React.FC = () => {
   const navItems: string[] = ['Gallery', 'Our Story', 'Blog', 'Contact'];
 
   return (
-    <header className="fixed top-0 w-full h-32 lg:h-[9.75rem] bg-main/95 backdrop-blur">
+    <header className="fixed top-0 z-50 w-full h-32 lg:h-[9.75rem] bg-main/95 backdrop-blur">
       <div className="width-balance h-full flex items-center justify-between">
         <Link href="/">
           <span className="text-black/50 text-2xl lg:text-3xl font-bold uppercase">MAKOKO</span>

@@ -1,8 +1,11 @@
+import Image from "next/image";
 import { Button } from "../interface";
 
-const Landing = () => {
+import LandingImage from "@/public/landing_preview.png";
+
+const Landing: React.FC = () => {
   return (
-    <section className="lg:py-2 width-balance">
+    <section className="width-balance relative pt-4">
       <div>
         <div className="text-center lg:text-left">
           <h1 className="text-black text-2xl md:text-4xl lg:text-[3.125rem] font-medium lg:leading-[3.75rem]">
@@ -22,6 +25,14 @@ const Landing = () => {
             Partner With Us
           </Button>
         </div>
+      </div>
+      <div className="lg:absolute lg:top-0 lg:right-0 lg:z-10 mx-auto mt-4 lg:-mt-1 lg:ml-0 lg:mr-10 xl:mr-20 w-full max-w-[36rem] xl:max-w-[44rem]">
+        <Image
+          className="w-full"
+          src={LandingImage}
+          alt="landing hero"
+          priority
+        />
       </div>
     </section>
   )
