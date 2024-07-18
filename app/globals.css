@@ -43,8 +43,14 @@
   font-style: normal;
 }
 
-body {
-  font-family: 'ClashGrotesk', sans-serif;
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  body {
+    font-family: 'ClashGrotesk', sans-serif;
+  }
 }
 
 @layer utilities {
@@ -54,5 +60,9 @@ body {
 
   .section-border {
     @apply mx-auto w-[85%] xl:w-3/4 max-w-7xl h-[1.84px] bg-black/20 blur-[1.5px];
+  }
+
+  .title-line {
+    @apply after:block after:content-[''] after:w-20 after:border-b after:border-b-black after:mt-1;
   }
 }

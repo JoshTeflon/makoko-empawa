@@ -1,4 +1,4 @@
-import { Banner, Landing, Services } from "@/components/views";
+import { AboutUs, Banner, Landing, Services } from "@/components/views";
 
 export default function Home() {
   return (
@@ -6,6 +6,8 @@ export default function Home() {
       <Landing />
       <Banner />
       <Services />
+      <div className="section-border"></div>
+      <AboutUs />
       <div className="section-border"></div>
     </main>
   );

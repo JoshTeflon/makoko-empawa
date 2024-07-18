@@ -12,12 +12,12 @@ const Button: React.FC<ButtonProps> = ({
   className = '',
   ...props
 }) => {
-  const baseClasses = 'w-full font-medium flex items-center justify-center outline-none focus:outline-none transition-all ease-in-out';
+  const baseClasses = 'font-medium flex items-center justify-center outline-none focus:outline-none transition-all ease-in-out';
   const variantClasses = {
     naked: '!py-0 w-fit bg-none text-current border-b-current hover:border-b hover:pb-0.5',
-    primary: 'bg-primary text-white',
-    outline: 'bg-none text-current border border-current',
-    secondary: 'bg-secondary text-black',
+    primary: 'w-full bg-primary text-white',
+    outline: 'w-full bg-none text-current border border-current',
+    secondary: 'w-full bg-secondary text-black',
     link: '!pt-0 !pb-0.5 w-fit bg-none text-current border-b-current border-b',
   };
   const sizeClasses = {

@@ -7,7 +7,7 @@ const Services: React.FC = () => {
     <section className="width-balance pt-16 pb-14 lg:pt-28 lg:pb-16">
       <div>
         <div className="mb-5 lg:mb-10 xl:mb-20 w-full max-w-xl">
-          <h3 className="text-black text-[1.375rem] lg:text-[2.25rem] leading-9 font-medium after:block after:content-[''] after:w-20 after:border-b after:border-b-black after:mt-1.5 lg:after:mt-2.5">
+          <h3 className="title-line text-black text-[1.375rem] lg:text-[2.25rem] leading-9 font-medium">
             Our dedicated workflow
             <br />
             are as follows.
