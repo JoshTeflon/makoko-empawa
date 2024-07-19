@@ -4,7 +4,7 @@ import { Button, ServiceCard } from "@/components/interface";
 
 const Services: React.FC = () => {
   return (
-    <section className="width-balance pt-16 pb-14 lg:pt-28 lg:pb-16">
+    <section className="width-balance pt-16 sm:pb-14 lg:pt-28 lg:pb-16">
       <div>
         <div className="mb-5 lg:mb-10 xl:mb-20 w-full max-w-xl">
           <h3 className="title-line text-black text-[1.375rem] lg:text-[2.25rem] leading-9 font-medium">
