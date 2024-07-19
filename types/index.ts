@@ -17,3 +17,8 @@ export interface WorkflowItem {
   title: string
   note?: string
 }
+
+export interface GalleryItem {
+  src: StaticImageData
+  title?: string
+}

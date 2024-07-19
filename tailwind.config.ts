@@ -12,6 +12,7 @@ const config: Config = {
         main: "#F8F5E9",
         primary: "#0B6051",
         secondary: "#FFC400",
+        galleryLines: "#212152",
       }
     },
   },
