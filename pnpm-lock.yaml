@@ -17,6 +17,9 @@ importers:
       react:
         specifier: ^18
         version: 18.3.1
+      react-curved-text:
+        specifier: ^3.0.1
+        version: 3.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-dom:
         specifier: ^18
         version: 18.3.1(react@18.3.1)
@@ -27,6 +30,9 @@ importers:
       '@types/react':
         specifier: ^18
         version: 18.3.3
+      '@types/react-curved-text':
+        specifier: ^2.0.3
+        version: 2.0.3
       '@types/react-dom':
         specifier: ^18
         version: 18.3.0
@@ -202,6 +208,9 @@ packages:
 
   '@types/prop-types@15.7.12':
     resolution: {integrity: sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==}
+
+  '@types/react-curved-text@2.0.3':
+    resolution: {integrity: sha512-J7yy3DJX+I+jQWk5r8IZaVyOLi0bsirD7k0yq2X6IwYTNSCVXfiEYYYq0Yoy4ZErdC2YV2nku+OQIxapPfG/Tg==}
 
   '@types/react-dom@18.3.0':
     resolution: {integrity: sha512-EhwApuTmMBmXuFOikhQLIBUn6uFg81SwLMOAUgodJF14SOBOCMdU04gDoYi0WOJJHD144TL32z4yDqCW3dnkQg==}
@@ -482,6 +491,10 @@ packages:
   doctrine@3.0.0:
     resolution: {integrity: sha512-yS+Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUijIYM7zrlYDM0BFXHjjPWlWZ1Rg7UaddZeIDmi9jF3HmqiQ2w==}
     engines: {node: '>=6.0.0'}
+
+  dommatrix@1.0.3:
+    resolution: {integrity: sha512-l32Xp/TLgWb8ReqbVJAFIvXmY7go4nTxxlWiAFyhoQw9RKEOHBZNnyGvJWqDVSPmq3Y9HlM4npqF/T6VMOXhww==}
+    deprecated: dommatrix is no longer maintained. Please use @thednp/dommatrix.
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
@@ -1215,6 +1228,12 @@ packages:
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
+  react-curved-text@3.0.1:
+    resolution: {integrity: sha512-tHRDAfiVa8bVMTadRdHfGoO/PjPgLF42RODAWoQlc2PNnwTDBh0hbSAZtNiNSmd8C3gB2d0rlNd841UXb0/rTQ==}
+    peerDependencies:
+      react: '>=18.0.0'
+      react-dom: '>=18.0.0'
+
   react-dom@18.3.1:
     resolution: {integrity: sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==}
     peerDependencies:
@@ -1392,6 +1411,9 @@ packages:
   supports-preserve-symlinks-flag@1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
+
+  svg-path-commander@1.0.5:
+    resolution: {integrity: sha512-hhQfARVXoPrwwe4DNPWM4hjQLK7rTxwQ+TUc5mxoe5g0k5eStc4SPnKqmivlm/dzZ98bI+yDyKye92n2t+oOiQ==}
 
   tailwindcss@3.4.4:
     resolution: {integrity: sha512-ZoyXOdJjISB7/BcLTR6SEsLgKtDStYyYZVLsUtWChO4Ps20CBad7lfJKVDiejocV4ME1hLmyY0WJE3hSDcmQ2A==}
@@ -1649,6 +1671,10 @@ snapshots:
       undici-types: 5.26.5
 
   '@types/prop-types@15.7.12': {}
+
+  '@types/react-curved-text@2.0.3':
+    dependencies:
+      '@types/react': 18.3.3
 
   '@types/react-dom@18.3.0':
     dependencies:
@@ -1960,6 +1986,8 @@ snapshots:
   doctrine@3.0.0:
     dependencies:
       esutils: 2.0.3
+
+  dommatrix@1.0.3: {}
 
   eastasianwidth@0.2.0: {}
 
@@ -2842,6 +2870,12 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
+  react-curved-text@3.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      svg-path-commander: 1.0.5
+
   react-dom@18.3.1(react@18.3.1):
     dependencies:
       loose-envify: 1.4.0
@@ -3043,6 +3077,10 @@ snapshots:
       has-flag: 4.0.0
 
   supports-preserve-symlinks-flag@1.0.0: {}
+
+  svg-path-commander@1.0.5:
+    dependencies:
+      dommatrix: 1.0.3
 
   tailwindcss@3.4.4:
     dependencies:

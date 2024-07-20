@@ -15,7 +15,12 @@ const Header: React.FC = () => {
             {
               navItems?.map((item: string, idx: number) => (
                 <li key={item} className="text-black/50 flex items-center">
-                  <Link href="/" className="text-sm lg:text-base font-medium whitespace-nowrap">{item}</Link>
+                  <Link
+                    href="/"
+                    className="text-sm lg:text-base font-medium whitespace-nowrap hover:text-secondary/75 transition-all ease-in-out duration-200"
+                  >
+                    {item}
+                  </Link>
                   {idx !== 3 && <div className="mx-6 lg:mx-7 h-5 border-l border-current"></div>}
                 </li>
               ))

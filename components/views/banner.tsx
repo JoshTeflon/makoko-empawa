@@ -1,6 +1,6 @@
 const Banner: React.FC = () => {
   return (
-    <div className="mt-0 lg:mt-40 w-full font-medium uppercase tracking-widest">
+    <div className="mt-0 lg:mt-12 xl:mt-24 w-full font-medium uppercase tracking-widest">
       <div
         className="relative z-20 h-[3.75rem] lg:h-20 bg-primary text-white text-2xl lg:text-[2.125rem] flex items-center justify-center"
       >
