@@ -10,7 +10,7 @@ interface ServiceCardProps extends WorkflowItem {
 const ServiceCard: React.FC<ServiceCardProps> = ({ src, title, note, className = '' }) => {
   return (
     <div className={clsx(className, "w-full max-w-xs lg:max-w-[21.25rem]")}>
-      <div className="w-full h-[22.375rem] lg:h-[30.5rem]">
+      <div className="w-full h-[22.375rem] lg:h-[26.75rem] xl:h-[30.5rem]">
         <Image
           className="w-full h-full"
           src={src}

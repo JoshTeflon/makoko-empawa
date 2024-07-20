@@ -18,7 +18,7 @@ const Button: React.FC<ButtonProps> = ({
     primary: 'w-full bg-primary text-white',
     outline: 'w-full bg-none text-current border border-current',
     secondary: 'w-full bg-secondary text-black',
-    link: '!pt-0 !pb-0.5 w-fit bg-none text-current border-b-current border-b',
+    link: '!pt-0 !pb-0.5 w-fit h-fit bg-none text-current border-b-current border-b',
   };
   const sizeClasses = {
     base: 'py-4 lg:py-5 text-sm lg:text-base',

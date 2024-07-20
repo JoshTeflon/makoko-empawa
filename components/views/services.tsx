@@ -1,6 +1,8 @@
+import clsx from "clsx";
+
+import { Button, ServiceCard } from "@/components/interface";
 import { workflowList } from "@/lib";
 import { WorkflowItem } from "@/types";
-import { Button, ServiceCard } from "@/components/interface";
 
 const Services: React.FC = () => {
   return (
@@ -17,12 +19,14 @@ const Services: React.FC = () => {
           </p>
         </div>
         <div className="w-full">
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-[1.875rem]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-[1.875rem]">
             {
-              workflowList?.map((work: WorkflowItem) => (
+              workflowList?.map((work: WorkflowItem, idx: number) => (
                 <div
                   key={work?.title}
-                  className="w-full"
+                  className={clsx("w-full", {
+                    "lg:-mt-48 xl:-mt-56": idx === 2
+                  })}
                 >
                   <ServiceCard
                     className="mx-auto w-full"
@@ -30,9 +34,19 @@ const Services: React.FC = () => {
                     title={work?.title}
                     note={work?.note}
                   />
+                  {idx === 2 &&
+                    <Button
+                      className="hidden lg:flex mt-16 mx-auto text-primary"
+                      variant="link"
+                    >View All Services</Button>
+                  }
                 </div>
               ))
             }
+            <Button
+              className="hidden sm:flex lg:hidden self-center mx-auto text-primary"
+              variant="link"
+            >View All Services</Button>
           </div>
           <Button
             className="sm:hidden mt-11 mb-[3.75rem] mx-auto text-primary"
