@@ -1,5 +1,5 @@
 import { Facebook, Instagram, Linkedin, X } from "@/components/icons";
-import { FooterLinks, GalleryItem, SocialLinks, WorkflowItem } from "@/types";
+import { BrainItem, FooterLinks, GalleryItem, SocialLinks, WorkflowItem } from "@/types";
 
 import WorkflowFirst from "@/public/workflow[0].png";
 import WorkflowSecond from "@/public/workflow[1].png";
@@ -87,3 +87,26 @@ export const galleryList: GalleryItem[] = [
     title: 'LET THERE BE LIGHT',
   },
 ];
+
+export const BrainList: BrainItem[] = [
+  {
+    // src: _,
+    name: 'Anthony Miracle',
+    role: 'Head Logistics',
+  },
+  {
+    // src: _,
+    name: 'Durodula Damilola',
+    role: 'Head Walfare',
+  },
+  {
+    // src: _,
+    name: 'Harrison Ogunsemore',
+    role: 'Head Foodbank',
+  },
+  {
+    // src: _,
+    name: 'Enikele Joshua',
+    role: 'Head Socials',
+  },
+]

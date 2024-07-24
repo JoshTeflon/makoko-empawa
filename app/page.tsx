@@ -1,6 +1,7 @@
 import {
   AboutUs,
   Banner,
+  Brains,
   Gallery,
   Landing,
   Services
@@ -16,6 +17,8 @@ export default function Home() {
       <AboutUs />
       <div className="section-border"></div>
       <Gallery />
+      <div className="section-border"></div>
+      <Brains />
       <div className="section-border"></div>
     </main>
   );

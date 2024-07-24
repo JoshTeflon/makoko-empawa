@@ -22,3 +22,9 @@ export interface GalleryItem {
   src: StaticImageData
   title?: string
 }
+
+export interface BrainItem {
+  // src: StaticImageData
+  name: string
+  role: string
+}

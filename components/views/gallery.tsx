@@ -5,7 +5,7 @@ import { Button } from "@/components/interface";
 import { galleryList } from "@/lib";
 import { GalleryItem } from "@/types";
 
-const Gallery = () => {
+const Gallery: React.FC = () => {
   const sideLineClass = "ml-2.5 lg:ml-[1.125rem] h-full border-r-[0.5px] border-galleryLines/30"
   const bottomLineClass = "mt-[1.125rem] md:mt-2.5 lg:mt-[1.125rem] mx-auto w-full border-b-[0.5px] border-galleryLines/30"
 
@@ -87,4 +87,4 @@ const Gallery = () => {
   )
 }
 
-export default Gallery
+export default Gallery;
