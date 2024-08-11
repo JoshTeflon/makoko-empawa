@@ -63,6 +63,6 @@
   }
 
   .title-line {
-    @apply after:block after:content-[''] after:w-12 md:after:w-16 lg:after:w-20 after:border-b after:border-b-black after:mt-1;
+    @apply after:block after:content-[''] after:w-12 md:after:w-16 lg:after:w-20 after:border-b after:border-b-current after:mt-1;
   }
 }

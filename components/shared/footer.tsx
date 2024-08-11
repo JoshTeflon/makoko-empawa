@@ -6,7 +6,7 @@ import { FooterLinks, SocialLinks } from "@/types";
 const Footer: React.FC = () => {
 
   return (
-    <footer className="py-16 lg:pb-10 bg-primary text-white border-t border-t-white/20">
+    <footer className="py-16 lg:pb-10 bg-primary text-white">
       <div className="width-balance">
         <div className="pb-9 lg:pb-11 w-full flex flex-col lg:flex-row justify-center lg:justify-between">
           <div className="mx-auto mb-[3.75rem] lg:mx-0 lg:mb-0 max-w-[24.75rem]">
