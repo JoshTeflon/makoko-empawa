@@ -3,6 +3,7 @@ import {
   Banner,
   Brains,
   Gallery,
+  HelpAction,
   Landing,
   Services
 } from "@/components/views";
@@ -20,6 +21,7 @@ export default function Home() {
       <div className="section-border"></div>
       <Brains />
       <div className="section-border"></div>
+      <HelpAction />
     </main>
   );
 }
