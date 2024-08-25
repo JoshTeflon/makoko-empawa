@@ -13,6 +13,10 @@ const config: Config = {
         primary: "#0B6051",
         secondary: "#FFC400",
         galleryLines: "#212152",
+      },
+      boxShadow: {
+        activeCard: '7px 16px 40px 3px rgba(0, 0, 0, 0.2)',
+        testimonialCard: '1px 0px 4px 1px rgba(0, 0, 0, 0.12)',
       }
     },
   },

@@ -5,3 +5,5 @@ export { default as Instagram } from "./instagram";
 export { default as Play } from "./play";
 export { default as BrainLeftCurve } from "./brain-left-curve";
 export { default as BrainRightCurve } from "./brain-right-curve";
+export { default as ArrowRight } from "./arrow-right";
+export { default as ArrowLeft } from "./arrow-left";

@@ -28,3 +28,16 @@ export interface BrainItem {
   name: string
   role: string
 }
+
+export interface NavigationArrow {
+  label: string
+  icon: React.ComponentType<SVGProps<SVGSVGElement>>
+  action: () => void
+}
+
+export interface Testimony {
+  name: string
+  occupation: string
+  src: StaticImageData | string
+  note: string
+}

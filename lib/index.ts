@@ -1,5 +1,5 @@
-import { Facebook, Instagram, Linkedin, X } from "@/components/icons";
-import { BrainItem, FooterLinks, GalleryItem, SocialLinks, WorkflowItem } from "@/types";
+import { ArrowLeft, ArrowRight, Facebook, Instagram, Linkedin, X } from "@/components/icons";
+import { BrainItem, FooterLinks, GalleryItem, NavigationArrow, SocialLinks, Testimony, WorkflowItem } from "@/types";
 
 import WorkflowFirst from "@/public/workflow[0].png";
 import WorkflowSecond from "@/public/workflow[1].png";
@@ -9,6 +9,9 @@ import GallerySecond from "@/public/gallery[1].png";
 import GalleryThird from "@/public/gallery[2].png";
 import GalleryFourth from "@/public/gallery[3].png";
 import GalleryFifth from "@/public/gallery[4].png";
+import TestimonialFirst from "@/public/testimonial[0].png";
+import TestimonialSecond from "@/public/testimonial[1].png";
+import TestimonialThird from "@/public/testimonial[2].png";
 
 export const socialLinks: SocialLinks[] = [
   {
@@ -109,4 +112,38 @@ export const BrainList: BrainItem[] = [
     name: 'Enikele Joshua',
     role: 'Head Socials',
   },
+];
+
+export const navigationArrows: NavigationArrow[] = [
+  {
+    label: 'right-button',
+    icon: ArrowRight,
+    action: () => null
+  },
+  {
+    label: 'left-button',
+    icon: ArrowLeft,
+    action: () => null
+  }
+];
+
+export const testimonies: Testimony[] = [
+  {
+    name: "Timothy Cruise",
+    occupation: "Trader",
+    src: TestimonialFirst,
+    note: "Witnessing the dedication and passion of the team in bringing hope and renewal to our community has truly inspired me  Through their efforts, I've seen tangible improvements in our daily lives."
+  },
+  {
+    name: "Fatima Mohamad",
+    occupation: "Trader",
+    src: TestimonialSecond,
+    note: "I've lived in Makoko for as long as I can remember, and I've seen the challenges we face every day. But since [Organization Name] stepped in, I've witnessed a remarkable change."
+  },
+  {
+    name: "Ali Salako",
+    occupation: "Student",
+    src: TestimonialThird,
+    note: "From providing access to clean water and healthcare services to creating opportunities for education."
+  }
 ]
