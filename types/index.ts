@@ -36,6 +36,7 @@ export interface NavigationArrow {
 }
 
 export interface Testimony {
+  id?: number
   name: string
   occupation: string
   src: StaticImageData | string

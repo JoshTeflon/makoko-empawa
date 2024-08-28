@@ -129,18 +129,21 @@ export const navigationArrows: NavigationArrow[] = [
 
 export const testimonies: Testimony[] = [
   {
+    id: 0,
     name: "Timothy Cruise",
     occupation: "Trader",
     src: TestimonialFirst,
     note: "Witnessing the dedication and passion of the team in bringing hope and renewal to our community has truly inspired me  Through their efforts, I've seen tangible improvements in our daily lives."
   },
   {
+    id: 1,
     name: "Fatima Mohamad",
     occupation: "Trader",
     src: TestimonialSecond,
     note: "I've lived in Makoko for as long as I can remember, and I've seen the challenges we face every day. But since [Organization Name] stepped in, I've witnessed a remarkable change."
   },
   {
+    id: 2,
     name: "Ali Salako",
     occupation: "Student",
     src: TestimonialThird,
