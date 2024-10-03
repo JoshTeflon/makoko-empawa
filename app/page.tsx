@@ -23,7 +23,7 @@ export default function Home() {
       <Brains />
       <div className="section-border"></div>
       <HelpAction />
-      <Testimonials />
+      {/* <Testimonials /> */}
     </main>
   );
 }
