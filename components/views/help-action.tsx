@@ -21,18 +21,16 @@ const HelpAction: React.FC = () => {
         className="mx-auto w-full max-w-[19.75rem] md:max-w-[32rem] lg:max-w-[42rem] xl:max-w-[53rem]"
       >
         <div className="relative w-full">
-          <Plasters className="-left-8 lg:-left-10 -top-1" />
-          <Plasters className="-right-8 lg:-right-10 -bottom-2" />
+          <Plasters className="z-10 -left-8 lg:-left-10 -top-1" />
+          <Plasters className="z-10 -right-8 lg:-right-10 -bottom-2" />
           <div className="w-full h-56">
             <Image
+              className="w-full h-full object-cover object-[center_20%]"
               src={ActionBg}
               alt="Help Action"
-              layout="fill"
-              objectFit="cover"
-              objectPosition="center 20%"
               priority
             />
-            <div className="w-full h-full bg-black/45 absolute">
+            <div className="w-full h-full bg-black/45 absolute top-0 bottom-0 left-0 right-0">
               <div className="mt-2 w-full h-full flex flex-col items-center justify-center">
                 <h5 className="text-xl md:text-2xl lg:text-3xl text-white font-semibold text-center">
                   Join our action

@@ -5,7 +5,8 @@ import {
   Gallery,
   HelpAction,
   Landing,
-  Services
+  Services,
+  Testimonials
 } from "@/components/views";
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
       <Brains />
       <div className="section-border"></div>
       <HelpAction />
+      {/* <Testimonials /> */}
     </main>
   );
 }
