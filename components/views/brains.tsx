@@ -1,4 +1,5 @@
-import { BrainLeftCurve, BrainRightCurve } from "../icons";
+import Image from "next/image";
+// import { BrainLeftCurve, BrainRightCurve } from "../icons";
 import { BrainList } from "@/lib";
 import { BrainItem } from "@/types";
 
@@ -14,7 +15,7 @@ const Brains: React.FC = () => {
         {
           BrainList?.map((i: BrainItem, idx: number) => (
             <div key={i?.name} className="flex flex-col items-center">
-              <div className={`flex  items-center ${idx % 2 === 0 ? 'text-secondary' : 'text-primary'}`}>
+              {/* <div className={`flex  items-center ${idx % 2 === 0 ? 'text-secondary' : 'text-primary'}`}>
                 <div className={` ${idx % 2 === 0 ? '-mr-4 mb-14' : '-mr-[1.25rem] mt-14 rotate-180'}`}>
                   {idx % 2 === 0 ? <BrainLeftCurve /> : <BrainRightCurve />}
                 </div>
@@ -22,8 +23,16 @@ const Brains: React.FC = () => {
                 <div className={`${idx % 2 === 0 ? '-ml-[1.25rem] mb-14' : '-ml-4 mt-14 rotate-180'}`}>
                 {idx % 2 === 0 ? <BrainRightCurve /> : <BrainLeftCurve />}
                 </div>
+              </div> */}
+              <div className="w-64 h-64 max-w-64 max-h-64">
+                <Image
+                  className="w-full h-full object-cover"
+                  src={i?.src}
+                  alt={i?.name ?? `brain_${idx}`}
+                  priority
+                />
               </div>
-              <div className="mt-4 lg:mt-5 flex flex-col items-center">
+              <div className="-mt-4 flex flex-col items-center">
                 <span className="text-[1.375rem] text-black font-medium leading-7">{i?.name}</span>
                 <span className="text-base text-black/70">{i?.role}</span>
               </div>

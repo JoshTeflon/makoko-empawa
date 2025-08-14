@@ -9,6 +9,10 @@ import GallerySecond from "@/public/gallery[1].png";
 import GalleryThird from "@/public/gallery[2].png";
 import GalleryFourth from "@/public/gallery[3].png";
 import GalleryFifth from "@/public/gallery[4].png";
+import BrainFirst from "@/public/brain[0].png";
+import BrainSecond from "@/public/brain[1].png";
+import BrainThird from "@/public/brain[2].png";
+import BrainFourth from "@/public/brain[3].png";
 import TestimonialFirst from "@/public/testimonial[0].png";
 import TestimonialSecond from "@/public/testimonial[1].png";
 import TestimonialThird from "@/public/testimonial[2].png";
@@ -93,22 +97,22 @@ export const galleryList: GalleryItem[] = [
 
 export const BrainList: BrainItem[] = [
   {
-    // src: _,
+    src: BrainFirst,
     name: 'Anthony Miracle',
     role: 'Head Logistics',
   },
   {
-    // src: _,
+    src: BrainSecond,
     name: 'Durodula Damilola',
     role: 'Head Walfare',
   },
   {
-    // src: _,
+    src: BrainThird,
     name: 'Harrison Ogunsemore',
     role: 'Head Foodbank',
   },
   {
-    // src: _,
+    src: BrainFourth,
     name: 'Enikele Joshua',
     role: 'Head Socials',
   },
